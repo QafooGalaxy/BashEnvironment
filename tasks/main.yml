@@ -1,6 +1,6 @@
 ---
 - name: "Create customized .bashrc configuration"
-  template: src="bashrc.j2" dest="{{ item.homedir }}/.bashrc" owner="{{ item.user }}" group="{{ item.group|default(item.user)) }}"
+  template: src="bashrc.j2" dest="{{ item.homedir }}/.bashrc" owner="{{ item.user }}" group="{{ item.group|default(item.user) }}"
   with_items: users
 
 - name: "Create formatted gitprompt functions"
