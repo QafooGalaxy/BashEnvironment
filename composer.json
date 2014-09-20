@@ -2,6 +2,6 @@
     "name": "qafoogalaxy/BashEnvironment",
     "type": "ansible-role",
     "require": {
-        "qafoogalaxy/installer": "1.0"
+        "qafoogalaxy/installer": "dev-master"
     }
 }
